@@ -2,5 +2,5 @@ import { NextResponse } from "next/server";
 import download from "./download.json";
 
 export async function GET() {
-  NextResponse.json(download);
+  return NextResponse.json(download);  // Add 'return' here
 }
